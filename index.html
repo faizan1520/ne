@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <script>
+            const currentDate = new Date();
+            console.log(currentDate.toString());
+            const currentDates = new Date();
+            const time = currentDates.toLocaleDateString();
+            console.log(time);
+            const currentDat = new Date();
+            const hours = currentDat.getHours();
+            const minutes = currentDat.getMinutes();
+            const seconds = currentDat.getSeconds();
+            const month = currentDat.getMonth() + 1;
+            const Day = currentDat.getDay()+2;
+            const year = currentDat.getFullYear();
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            const dateString = `${month}/${year}/${Day}`;
+            console.log("Current Time:", timeString);
+            console.log("Current Date:", dateString);
+            
+            
+            
+            for (let year = 2014; year <= 2050; year++) { const firstJan=new Date(year, 0, 1); console.log(`1st January ${year}:
+                ${firstJan.toDateString()}`); } function isLeapYear(year) { return (year % 4===0 && (year % 100 !==0 || year %
+                400===0)); } for (let year=2014; year <=2050; year++) { if (isLeapYear(year)) { console.log(`${year} is a Leap
+                Year`); } } </script>
+
+</body>
+</html>
